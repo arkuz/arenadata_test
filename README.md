@@ -11,15 +11,15 @@ pip install virtualenv
 
 ### Копирование репозитория и установка зависимостей
 ```bash
-git clone https://github.com/arkuz/arenadata_tests
-cd arenadata_tests
+git clone https://github.com/arkuz/arenadata_test
+cd arenadata_test
 virtualenv env
 env/bin/activate
 pip install -r requirements.txt
 ```
 
 ### Запуск тестов
- - Перед запуском тестов необходимо перейти в каталог проекта `arenadata_tests`
+ - Перед запуском тестов необходимо перейти в каталог проекта `arenadata_test`
  
 Аргументы запуска:
 - -s - показывать принты в процессе выпонения
