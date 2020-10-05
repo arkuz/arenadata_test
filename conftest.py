@@ -46,9 +46,14 @@ def upload_empty_template():
     api.upload_template(filename=filename)
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def start_chrome():
     config = read_yaml(os.path.join(const.PROJECT, 'config.yaml'))
     site_url = config['site_url']
     browser.config.browser_name = 'chrome'
     browser.open(site_url)
+
+
+@pytest.fixture()
+def refresh():
+    browser.driver.refresh()
