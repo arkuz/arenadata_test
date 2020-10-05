@@ -1,0 +1,4 @@
+- id: 3
+  label: "Element  3"
+  link: "http://rambler.ru"
+  depends: 2

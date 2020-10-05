@@ -1,0 +1,9 @@
+- id: 1
+  label: "yandex"
+  #link: "http://yandex.ru"
+  #depends: {}
+- id: 2
+  label: "google"
+  link: "http://google.ru"
+  depends: 1
+

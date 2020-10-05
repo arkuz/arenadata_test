@@ -1,0 +1,4 @@
+- id: 2
+  label: "Element  2"
+  link: "http://google.ru"
+  depends: 1
