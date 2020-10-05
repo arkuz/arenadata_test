@@ -113,3 +113,11 @@ class TestsAPI:
         resp = self.api.insall_template(templ_id)
         assert resp.status_code == 404
         assert resp.json()['message'] == f'No template with tmpl_id={templ_id} found!'
+
+
+    # Тест на установку пустого шаблона
+    def test_insall_empty_template_invalid(self, upload_empty_template):
+        templ_id = 'empty.yaml'
+        resp = self.api.insall_template(templ_id.split(".")[0])
+        assert resp.status_code == 500
+        assert resp.json()['message'] == 'Invalid template format!'
